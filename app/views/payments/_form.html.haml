@@ -1,0 +1,6 @@
+= simple_form_for payment do |f|
+  = f.input :subscription
+  = f.association :student, collection: Student.order(:last_name), value_method: :id, label_method: lambda { |student| "#{student.decorate.full_name}" }
+  %br
+  = link_to t('shared.back'), payments_path, class: 'btn btn-default'
+  = f.button :submit

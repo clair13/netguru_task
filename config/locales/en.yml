@@ -4,6 +4,7 @@ en:
     teachers: Teachers
     reports: Reports
     reports_subjects: Subjects
+    payments: Payments
     logout: Logout
     signin: Sign in
     signup: Sign up
@@ -33,4 +34,10 @@ en:
     columns:
       full_name: Full name
       birthdate: Birthdate
-      avg_notes: Notes avarange
+      avg_notes: Notes average
+  payment:
+    columns:
+      student: Students
+      subscription: subscription
+      updated_at: Updated At
+      last_name: Last name
