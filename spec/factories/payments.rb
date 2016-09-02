@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :payment do
-    subscription 1
+    subscription 100
 student nil
   end
 
