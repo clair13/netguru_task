@@ -5,5 +5,4 @@
 $(document).ready(->
   $('.payments-table').dataTable
     searching: true
-    paginationType: "full_numbers"
 );

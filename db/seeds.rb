@@ -21,7 +21,8 @@ end
 25.times do
   Student.create!(
     first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name
+    last_name: Faker::Name.last_name,
+    birthdate: Faker::Date.between(50.years.ago, 15.years.ago)
   )
 end
 
@@ -38,6 +39,10 @@ SubjectItem.all.each do |subject_item|
                                                                 value: rand(1..6))
     end
   end
+end
+
+Student.all.each do |student|
+  Payment.create(subscription: rand(40..300), student: student)
 end
 
 puts "Seeds: done"
