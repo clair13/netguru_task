@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/clair13/netguru_task.svg?branch=master)](https://travis-ci.org/clair13/netguru_task)
+
+
 RoR Workshops
 ================
 
